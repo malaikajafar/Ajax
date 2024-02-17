@@ -1,0 +1,46 @@
+$.ajax({
+  url: '/api/books',
+  method: 'GET',
+  success: function(data) {
+    // Update the HTML content with the received data
+    // Note: Adjust this based on your actual data structure
+    // Example: $('#book-title').text(data.title);
+  },
+  error: function(error) {
+    console.error('Error fetching data:', error);
+  }
+});
+$.ajax({
+    url: '/api/product',
+    method: 'GET',
+    success: function(data) {
+      // Update the HTML content with the received data
+      // Example: $('#product-title').text(data.title);
+    },
+    error: function(error) {
+      console.error('Error fetching data:', error);
+    }
+  });
+  $.ajax({
+    url: '/api/userData', // Replace with the appropriate API endpoint
+    method: 'GET',
+    success: function(data) {
+      // Update HTML content with received data
+      // Example: $('#user-name').text(data.userName);
+    },
+    error: function(error) {
+      console.error('Error fetching user data:', error);
+    }
+  });
+  
+  $.ajax({
+    url: '/api/productData', // Replace with the appropriate API endpoint
+    method: 'GET',
+    success: function(data) {
+      // Update HTML content with received data
+      // Example: $('#product-title').text(data.productTitle);
+    },
+    error: function(error) {
+      console.error('Error fetching product data:', error);
+    }
+  });
